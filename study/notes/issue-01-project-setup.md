@@ -1,6 +1,6 @@
 # Issue 01 — Spring Initializr로 프로젝트 셋업
 
-> 관련 PR: #__ · 참고: start.spring.io / Spring Boot 3.5.x
+> 관련 PR: #16 · 참고: start.spring.io / Spring Boot 3.5.x
 
 ## 무엇을 만드나
 나머지 14개 이슈가 올라갈 Spring Boot 프로젝트 골격을 만든다. Spring Initializr로
