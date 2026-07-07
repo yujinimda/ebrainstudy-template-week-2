@@ -1,6 +1,6 @@
 # Issue 03 — DB 연결 + MyBatis 설정
 
-> 관련 PR: #__ · 참고: MyBatis Spring Boot Starter 문서
+> 관련 PR: #18 · 참고: MyBatis Spring Boot Starter 문서
 
 ## 무엇을 만드나
 스프링을 docker MySQL(3309)에 연결하고, SQL 실행 도구인 MyBatis를 붙인다.
