@@ -20,6 +20,15 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// ── 이슈 #3: DB 연결 ──────────────────────────────────────────
+	// MyBatis 스타터: SQL 실행 + 결과를 자바 객체로 매핑.
+	//   ※ 스프링 부트 BOM이 버전을 관리 안 해주는 라이브러리라 버전을 직접 명시한다.
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.4'
+	// MySQL JDBC 드라이버: "MySQL과 대화하는 법". 실행 시점에만 필요 → runtimeOnly.
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	// ─────────────────────────────────────────────────────────────
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
