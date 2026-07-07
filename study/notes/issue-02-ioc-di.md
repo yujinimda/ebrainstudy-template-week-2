@@ -1,6 +1,6 @@
 # Issue 02 — Spring 핵심 개념: IoC/DI와 레이어드 아키텍처
 
-> 관련 PR: #__ · 참고: 스프링 공식 문서 (Core / IoC Container)
+> 관련 PR: #17 · 참고: 스프링 공식 문서 (Core / IoC Container)
 
 ## 무엇을 만드나
 개념 이해가 목표. 눈으로 확인하려고 연습용 `com.study.board.hello` 패키지에
