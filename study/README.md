@@ -7,3 +7,4 @@
 ## 노트 목록
 
 <!-- 노트를 만들면 여기에 한 줄씩 추가 -->
+- [Issue 01 — 프로젝트 셋업](notes/issue-01-project-setup.md)
