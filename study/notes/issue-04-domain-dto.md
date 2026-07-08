@@ -1,6 +1,6 @@
 # Issue 04 — 도메인/DTO 클래스 + Lombok
 
-> 관련 PR: #__ · 참고: Lombok 문서, Java 타입(원시 vs 래퍼)
+> 관련 PR: #20 · 참고: Lombok 문서, Java 타입(원시 vs 래퍼)
 
 ## 무엇을 만드나
 board 테이블의 한 행을 담을 `Board` 도메인 클래스(`com.study.board.domain.Board`)를 만든다.
