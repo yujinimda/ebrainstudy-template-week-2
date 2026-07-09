@@ -1,6 +1,6 @@
 # Issue 05 — 목록 조회 (Mapper → Service → Controller → Thymeleaf)
 
-> 관련 PR: #__ · 참고: MyBatis 매퍼, Thymeleaf, Spring MVC Model
+> 관련 PR: #21 · 참고: MyBatis 매퍼, Thymeleaf, Spring MVC Model
 
 ## 무엇을 만드나
 첫 완성 기능. `/boards` 요청 → DB의 게시글 전체를 조회 → HTML 표로 렌더링.
