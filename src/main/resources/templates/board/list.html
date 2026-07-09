@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 목록</title>
+</head>
+<body>
+    <h1>게시글 목록</h1>
+
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+                <th>작성일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- th:each = boards 리스트를 돌면서 각 board 마다 <tr> 한 줄을 그림 (for-each) -->
+            <tr th:each="board : ${boards}">
+                <!-- th:text = 이 자리에 board.getBoardId() 값을 출력 (@Getter가 만든 getter 호출됨) -->
+                <td th:text="${board.boardId}">1</td>
+                <td th:text="${board.title}">제목 미리보기</td>
+                <td th:text="${board.writer}">작성자</td>
+                <td th:text="${board.viewCount}">0</td>
+                <td th:text="${board.createdAt}">2026-01-01</td>
+            </tr>
+            <!-- 목록이 비었을 때 -->
+            <tr th:if="${#lists.isEmpty(boards)}">
+                <td colspan="5">게시글이 없습니다.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

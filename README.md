@@ -24,7 +24,7 @@
 - [x] #2 Spring 핵심 개념: IoC/DI와 레이어드 아키텍처
 - [x] #3 DB 연결 + MyBatis 설정
 - [x] #4 도메인/DTO 클래스 + Lombok
-- [ ] #5 목록 조회 (Mapper → Service → Controller → Thymeleaf)
+- [x] #5 목록 조회 (Mapper → Service → Controller → Thymeleaf)
 - [ ] #6 검색 (MyBatis 동적 SQL)
 - [ ] #7 페이징
 - [ ] #8 보기 화면 + 조회수 증가
