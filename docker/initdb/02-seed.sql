@@ -7,9 +7,9 @@ SET NAMES utf8mb4;
 
 INSERT INTO board (category_id, title, content, writer, password, view_count, created_at, updated_at) VALUES
     (1, '첫 번째 글입니다', 'JSP/Servlet 게시판 스터디 첫 글. 보기 화면 테스트용 내용입니다.', '지니', 'test1234!', 5, '2026-07-01 10:00:00', NULL),
-    (2, 'JavaScript와 자바는 다르다', '이름만 비슷하고 완전히 다른 언어입니다. === 없음 주의.', '웅제', 'test1234!', 12, '2026-07-02 14:30:00', '2026-07-03 09:00:00'),
+    (2, 'JavaScript와 자바는 다르다', '이름만 비슷하고 완전히 다른 언어입니다. === 없음 주의.', '무민', 'test1234!', 12, '2026-07-02 14:30:00', '2026-07-03 09:00:00'),
     (3, 'MySQL utf8mb4를 쓰는 이유', 'utf8은 3바이트라 이모지가 안 들어감. utf8mb4가 진짜 UTF-8.', '지니', 'test1234!', 33, '2026-07-03 20:15:00', NULL);
 
 INSERT INTO comment (board_id, writer, content, created_at) VALUES
-    (1, '웅제', '축하합니다 첫 글!', '2026-07-01 11:00:00'),
+    (1, '무민', '축하합니다 첫 글!', '2026-07-01 11:00:00'),
     (1, '지니', '감사합니다', '2026-07-01 11:30:00');
