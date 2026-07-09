@@ -10,3 +10,4 @@
 - [Issue 01 — 프로젝트 셋업](notes/issue-01-project-setup.md)
 - [Issue 02 — IoC/DI와 레이어드 아키텍처](notes/issue-02-ioc-di.md)
 - [Issue 03 — DB 연결 + MyBatis 설정](notes/issue-03-db-mybatis.md)
+- [Issue 04 — 도메인/DTO 클래스 + Lombok](notes/issue-04-domain-dto.md)
