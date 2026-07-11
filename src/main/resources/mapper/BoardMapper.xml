@@ -2,17 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- namespace = 연결할 인터페이스의 전체 이름(FQN). 이게 맞아야 BoardMapper와 이어진다. -->
 <mapper namespace="com.study.board.mapper.BoardMapper">
 
-    <!--
-      id="findAll"        → 인터페이스의 findAll() 메서드와 연결
-      resultType="Board"  → 조회된 각 행을 Board 객체로 담아라
-                            (map-underscore-to-camel-case 덕에 board_id→boardId 자동 매핑)
-    -->
     <select id="findAll" resultType="com.study.board.domain.Board">
         SELECT *
         FROM board
+        ORDER BY board_id DESC
+    </select>
+
+    <!-- 제목 검색. keyword가 없으면 <if>가 빠져 전체 조회가 된다. -->
+    <select id="search" resultType="com.study.board.domain.Board">
+        SELECT *
+        FROM board
+        <if test="keyword != null and keyword != ''">
+            WHERE title LIKE CONCAT('%', #{keyword}, '%')
+        </if>
         ORDER BY board_id DESC
     </select>
 
